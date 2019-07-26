@@ -1,0 +1,156 @@
+{% extends 'blog/base.html' %}
+{% block main %}
+    {% for post in post_list %}
+        <article class="post post-1">
+            <header class="entry-header">
+                <h1 class="entry-title">
+                    <a href="/post/{{ post.pk }}/" rel="external nofollow">{{ post.title }}</a>
+                </h1>
+                <div class="entry-meta">
+                    <span class="post-category"><a href="#" rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow">{{ post.category.name }}</a></span>
+                    <span class="post-date"><a href="#" rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow" rel="external nofollow"
+                                               rel="external nofollow"><time class="entry-date"
+                                                                             datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
+                    <span class="post-author"><a href="#" rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow">{{ post.author }}</a></span>
+                    <span class="comments-link"><a href="#" rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow" rel="external nofollow"
+                                                   rel="external nofollow">4 评论</a></span>
+                    <span class="views-count"><a href="#" rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow" rel="external nofollow"
+                                                 rel="external nofollow">588 阅读</a></span>
+                </div>
+            </header>
+            <div class="entry-content clearfix">
+                <p>{{ post.excerpt }}</p>
+                <div class="read-more cl-effect-14">
+                    <a href="/post/{{ post.pk }}" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" rel="external nofollow"
+                       rel="external nofollow" rel="external nofollow" class="more-link">继续阅读 <span
+                            class="meta-nav">→</span></a>
+                </div>
+            </div>
+        </article>
+    {% empty %}
+        <div class="no-post">暂时还没有发布的文章</div>
+    {% endfor %}
+    <!-- 简单分页效果
+    <div class="pagination-simple">
+        <a href="#">上一页</a>
+        <span class="current">第 6 页 / 共 11 页</span>
+        <a href="#">下一页</a>
+    </div>
+    -->
+    <div class="pagination">
+        <ul>
+            <li>
+                {% if blogs.has_previous %}{# 是否上一页 #}
+                    <a href="?page={{ blogs.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                {% else %}
+                    <a href="#"><span aria-hidden="true">&laquo;</span></a>
+                {% endif %}
+            </li>
+            {# 全部页码 #}
+            {% for page in page_list %}
+                {% if page == blogs.number %}{# 判断是否当前页 是则高亮 #}
+                    <li><span class="current">{{ page }}</span></li>
+                {% else %}
+                    {% if page == '...' %}
+                        <li><span>{{ page }}</span></li>
+                    {% else %}
+                        <li><a href="?page={{ page }}">{{ page }}</a></li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <li>
+                {% if blogs.has_next %}
+                    <a href="?page={{ blogs.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                {% else %}
+                    <a href="#"><span aria-hidden="true">&raquo;</span></a>
+                {% endif %}
+            </li>
+        </ul>
+    </div>
+
+    {#                <div class="pagination-simple">#}
+    {#                    <a href="{{  }}">上一页</a>#}
+    {#                    <span class="current">第 6 页 / 共 11 页</span>#}
+    {#                    <a href="#">下一页</a>#}
+    {#                </div>#}
+{% endblock main %}
