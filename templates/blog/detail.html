@@ -1,9 +1,9 @@
 {% extends 'blog/base.html' %}
 {% block main %}
-    <article class="post post-{{ post.pk }}">
+    <article class="post post-{{ post.pk }}" style="background:rgba(39,60,125,0);">
         <header class="entry-header">
             <h1 class="entry-title">{{ post.title }}</h1>
-            <div class="entry-meta">
+            <div class="entry-meta" style="background:rgba(39,60,125,0);">
                 <span class="post-category"><a href="#" rel="external nofollow" rel="external nofollow"
                                                rel="external nofollow" rel="external nofollow" rel="external nofollow"
                                                rel="external nofollow" rel="external nofollow" rel="external nofollow"
@@ -60,30 +60,30 @@
                                              rel="external nofollow" rel="external nofollow" rel="external nofollow">588 阅读</a></span>
             </div>
         </header>
-        <div class="entry-content clearfix">
+        <div class="entry-content clearfix" style="background:rgba(39,60,125,0);">
             {{ post.body }}
         </div>
     </article>
-    <section class="comment-area" id="comment-area">
+    <section class="comment-area" id="comment-area" style="background:rgba(39,60,125,0);">
         <hr>
         <h3>发表评论</h3>
         <form action="#" method="post" class="comment-form">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row" style="background:rgba(39,60,125,0);">
+                <div class="col-md-4" style="background:rgba(39,60,125,0);">
                     <label for="id_name">名字：</label>
-                    <input type="text" id="id_name" name="name" required>
+                    <input type="text" id="id_name" name="name" required style="background:rgba(39,60,125,0);">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="background:rgba(39,60,125,0);">
                     <label for="id_email">邮箱：</label>
-                    <input type="email" id="id_email" name="email" required>
+                    <input type="email" id="id_email" name="email" required style="background:rgba(39,60,125,0);">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="background:rgba(39,60,125,0);">
                     <label for="id_url">网址：</label>
-                    <input type="text" id="id_url" name="url">
+                    <input type="text" id="id_url" name="url" style="background:rgba(39,60,125,0);">
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" style="background:rgba(39,60,125,0);">
                     <label for="id_comment">评论：</label>
-                    <textarea name="comment" id="id_comment" required></textarea>
+                    <textarea name="comment" id="id_comment" required style="background:rgba(39,60,125,0);"></textarea>
                     <button type="submit" class="comment-btn">发表</button>
                 </div>
             </div>    <!-- row -->
@@ -124,7 +124,7 @@
     </section>
 {% endblock main %}
 {% block toc %}
-    <div class="widget widget-content">
+    <div class="widget widget-content" style="background:rgba(39,60,125,0);">
         <h3 class="widget-title">文章目录</h3>
         <ul>
             <li>

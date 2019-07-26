@@ -13,6 +13,7 @@
           rel="external nofollow">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
           rel="external nofollow" rel="external nofollow" rel="external nofollow">
+    <link href="{% static 'blog/css/index.css' %}" rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}" rel="external nofollow" rel="external nofollow">
     <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}" rel="external nofollow">
 
@@ -21,11 +22,14 @@
     <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'blog/js/pace.min.js' %}"></script>
     <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
+    <style>
+      a,p,div,h1{color: white !important;}
+    </style>
 </head>
 
 <body>
 <div class="container">
-    <header id="site-header">
+    <header id="site-header" style="background:rgba(39,60,125,0);">
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
@@ -46,6 +50,7 @@
                             <li class="cl-effect-11"><a href="#" data-hover="博客">博客</a></li>
                             <li class="cl-effect-11"><a href="#" data-hover="关于">关于</a></li>
                             <li class="cl-effect-11"><a href="#" data-hover="联系">联系</a></li>
+                            <li class="cl-effect-11"><a href="admin/" data-hover="发布">发布</a></li>
                             <li class="cl-effect-11"><a href="login.html" data-hover="登录">登录</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -68,7 +73,7 @@
 
 <div class="content-body">
     <div class="container">
-        <div class="row">
+        <div class="row" style="background:rgba(39,60,125,0);">
             <main class="col-md-8">
                 {% block main %}
                 {% endblock main %}
@@ -76,7 +81,7 @@
             <aside class="col-md-4">
                 {% block toc %}
                 {% endblock toc %}
-                <div class="widget widget-recent-posts">
+                <div class="widget widget-recent-posts" style="background:rgba(39,60,125,0);">
                     <h3 class="widget-title">最新文章</h3>
                     <ul>
                         <li>
@@ -90,7 +95,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="widget widget-archives">
+                <div class="widget widget-archives" style="background:rgba(39,60,125,0);">
                     <h3 class="widget-title">归档</h3>
                     <ul>
                         <li>
@@ -105,7 +110,7 @@
                     </ul>
                 </div>
 
-                <div class="widget widget-category">
+                <div class="widget widget-category" style="background:rgba(39,60,125,0);">
                     <h3 class="widget-title">分类</h3>
                     <ul>
                         <li>
@@ -120,7 +125,7 @@
                     </ul>
                 </div>
 
-                <div class="widget widget-tag-cloud">
+                <div class="widget widget-tag-cloud" style="background:rgba(39,60,125,0);">
                     <h3 class="widget-title">标签云</h3>
                     <ul>
                         <li>

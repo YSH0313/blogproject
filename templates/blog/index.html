@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block main %}
     {% for post in post_list %}
-        <article class="post post-1">
+        <article class="post post-1" style="background:rgba(39,60,125,0);">
             <header class="entry-header">
                 <h1 class="entry-title">
                     <a href="/post/{{ post.pk }}/" rel="external nofollow">{{ post.title }}</a>
